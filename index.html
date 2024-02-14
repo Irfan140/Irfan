@@ -3,31 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic-Tac-Toe Game</title>
+    <title>Irfan-Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="msg-container hide">
-      <p id="msg">Winner</p>
-      <button id="new-btn">New Game</button>
-    </div>
-    <main>
-      <h1>Tic Tac Toe</h1>
-      <div class="container">
-        <div class="game">
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
+    <header>
+      <nav>
+        <div class="left">Irfan's portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact me</a></li>
+          </ul>
         </div>
-      </div>
-      <button id="reset-btn">Reset Game</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Irfan</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+        </div>
+
+        <div class="rightSection">
+          <img src="Logo.png" alt="" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Technologies Learned</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="3.png" alt="" />
+            <div class="vertical-title">Programming Languages</div>
+            <div class="vertical-desc">C , C++ , JavaScript</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="2.png" alt="" />
+            <div class="vertical-title">Web Development</div>
+            <div class="vertical-desc">HTML , CSS , JS</div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="1.png" alt="" />
+            <div class="vertical-title">Currently Learning</div>
+            <div class="vertical-desc">
+              I am Learning DSA in C++ language and also practicing Web
+              development
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Programmer", "Cyber security Enthusiast"],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
+  <script src="script.js"></script>
 </html>
